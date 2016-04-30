@@ -1,0 +1,133 @@
+html {
+	height: auto;
+	width: auto;
+	
+}
+
+body { 
+    height: 5500px;
+	width: 1920px;
+    margin: 0px auto;
+	z-index: -10;
+	background: url(back_ground2.gif) no-repeat ;
+	background-position: center;
+	overflow-y: scroll;
+	
+
+}
+#header
+{
+    margin-top: 10px; /* Отступы вокруг элемента */
+    padding: 40px; /* Поля вокруг текста */
+	width: auto;
+	height: 127px; /*427*/
+	
+	
+}
+p1
+{
+	font-size: 20pt;
+	font-family: "Courier New";
+	float: right
+	
+	
+}
+p2
+{
+	font-size: 20pt;
+	font-family: "Courier New";
+	float: right
+}
+
+
+a {
+	 text-decoration: none;
+	text-indent: 40px;
+}
+
+#content1 
+{
+	width: 1920px;
+	height: 600px;
+	background: url(whitestripprozrachnyj.png) no-repeat fixed top ;
+	text-align: center;
+	align-content: center;
+	transition:all 0.5s ease;
+	
+	
+	
+}
+p3
+{
+	font-size: 30pt;
+	font-family: "Courier New";
+	top: 500px;	
+}
+
+
+
+table {
+	caption-side: top;
+	width: auto; /* Ширина таблицы */
+	height: auto;
+    border-spacing: 10px; /* Расстояние между ячейками */
+	border: 0px;
+	margin: 50px auto;
+	margin-top: 50px;
+	
+   }
+   
+   
+   th {  
+     /* Цвет фона ячеек */
+    padding: 0px; /* Поля вокруг текста */
+	margin: 0;
+	border: 0px ; 
+   }
+.hover
+{
+	opacity:0.7
+}
+.hover:hover {
+	  opacity:1;
+ 
+}
+.pp
+{
+	margin-top: 500px;
+}
+
+
+#content2
+{
+	z-index: 2;
+	position: absolute;
+	margin-top: 500px;
+	margin-left: 400px
+	
+	
+}
+
+
+
+p4
+{
+	
+	font-size: 30pt;
+	font-family: "Courier New";
+}
+p5{
+	
+	font-size: 30pt;
+	font-family: "Courier New";
+	margin: 300px;
+}
+
+p6{
+	
+	font-size: 30pt;
+	font-family: "Courier New";
+	margin: 0px;
+}
+
+
