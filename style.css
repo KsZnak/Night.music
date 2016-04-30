@@ -103,31 +103,34 @@ table {
 	z-index: 2;
 	position: absolute;
 	margin-top: 500px;
-	margin-left: 400px
+	margin-left: 400px;
 	
 	
 }
 
 
+
+#mySelectId
+{
+	font-size: 40pt;
+	font-family: "Courier New";
+	margin: 0px;
+	border: 0px;
+}
+
+li
+{
+	font-size: 40pt;
+	font-family: "Courier New";
+
+	text-align: left;
+	list-style-type: none; 
+}
 
 p4
 {
+	font-size: 20pt;
 	
-	font-size: 30pt;
-	font-family: "Courier New";
-}
-p5{
-	
-	font-size: 30pt;
-	font-family: "Courier New";
-	margin: 300px;
-}
-
-p6{
-	
-	font-size: 30pt;
-	font-family: "Courier New";
-	margin: 0px;
 }
 
 
