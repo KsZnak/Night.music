@@ -28,10 +28,9 @@
 		<div id="content1">	
 			
 		<a>
-			
+			<tr>
+				<table>
 			<p3><div class="pp"> Randon playlist</div></p3>
-			<table border="1">
-			<tr>	
 			<th><div class="hover"> <a href="ambient.html"><img src = "ambient.gif"></a></div></th>	
 			<th><div class="hover"><a href="jazz.html"><img src = "jazz.gif"></a></div></th>
 			<th><div class="hover"><a href="LoFi.html"><img src = "LoFi.gif"></a></div></th>
@@ -40,23 +39,97 @@
 			<th><div class="hover"><a href="post-rock.html"><img src = "Post-rock.gif"></a></div></th>
 			<th><div class="hover"><a href="Instrumental.html"><img src = "Instrumental.gif"></a></div></th>
 				
-			</table>
+			</tr></table>
 			</a>	
 			<div id="content2">
 				
 
-  <ul>
- <li>Gener</li>
- <li><p4>Ambient</p4></li>
- <li><p4>Jazz</p4></li>
- <li><p4>Lo Fi</p4></li>
- <li><p4>Neo classical</p4></li>
- <li><p4>Post-rock</p4></li>
- <li><p4>Instrumental</p4></li>
+
+   <ul id="tabs">
+
+    <li><a href="#" title="Ambient"><p4>Ambient</p4></a></li>
+
+    <li><a href="#" title="Jazz"><p4>Jazz</p4></a></li>
+
+    <li><a href="#" title="Lo-Fi"><p4>Lo Fi</p4></a></li>
+
+    <li><a href="#" title="NeoClassica"><p4>Neo Classica</p4></a></li>
+	   <li><a href="#" title="Post-rock"><p4>Post-rock</p4></a></li>
+	     <li><a href="#" title="Instrumental"><p4>Instrumental</p4></a></li>
+
 </ul>
+
+ 
+
+<div id="content">
+
+    <div id="Ambient"> 
+		
+		</div>
+
+    <div id="Jazz">
+		
+	</div>
+
+    <div id="LoFi">
+		...
+	</div>
+
+    <div id="NeoClassica">
+		...
+	</div>
+	
+	 <div id="Post-rock">
+	 <p5><table border="1">
+<tr>
+<td>God is an astronaut</td>
+<td>EF</td>
+	<td>Sleep diler</td>
+	<td>This Will Destroy You</td>
+	
+</tr>
+<tr>
+<td>Lowercase Noises</td>
+<td>Moonlit Sailor</td>
+	<td>The Evpatoria Report</td>
+	<td>Anoice</td>		
+</tr>
+<tr>
+<td>The Allstar Project</td>
+<td>Poets Of Light</td>
+				 <td>Blueneck</td>
+				 <td>Sinobola </td>
+				 
+			 </tr>
+</table> 
+			</p5> 
+	</div>
+			 								
+	
+	<div id="Instrumental">
+		...
+	</div>
+
+</div>
+<script>
+				$(document).ready(function() {
+	$("#content div").hide(); // Скрываем содержание
+	$("#tabs li:first").attr("id","current"); // Активируем первую закладку
+	$("#content div:first").fadeIn(); // Выводим содержание
+    
+    $('#tabs a').click(function(e) {
+        e.preventDefault();        
+        $("#content div").hide(); //Скрыть все сожержание
+        $("#tabs li").attr("id",""); //Сброс ID
+        $(this).parent().attr("id","current"); // Активируем закладку
+        $('#' + $(this).attr('title')).fadeIn(); // Выводим содержание текущей закладки
+    });
+})();
+ </script>
+ 
 			</div>
 				
 			
-		</div>
+		
 	</body>
 </html>
