@@ -5,6 +5,22 @@
 	<title>nigt.music_EF</title>
 	<script src="jquery-2.2.3.js"></script>
 	
+	<script>
+				$(document).ready(function() {
+	$("#content div").hide(); // Скрываем содержание
+	$("#tabs li:first").attr("id","current"); // Активируем первую закладку
+	$("#content div:first").fadeIn(); // Выводим содержание
+    
+    $('#tabs a').click(function(e) {
+        e.preventDefault();        
+        $("#content div").hide(); //Скрыть все сожержание
+        $("#tabs li").attr("id",""); //Сброс ID
+        $(this).parent().attr("id","current"); // Активируем закладку
+        $('#' + $(this).attr('title')).fadeIn(); // Выводим содержание текущей закладки
+    });
+})();
+ </script>
+	
 		<link rel = "stylesheet" href="style.css"/>	
 	
 	
@@ -13,11 +29,12 @@
 			
 		<div id="header">
 		 <a title="main" href="index2.html">
-			<img src="logo.gif" alt="логотип"/></a>		
-		
-			
+			<img src="logo2.gif" alt="логотип"/>		
+		 </a>
+			<a title="main" href="">
+			<p0>night.music.FE</p0>
 		<a title="sing_up" href="singup.html" 
-			style= "color:#ffffff"/>	
+			style= "color:#fff"/>	
 			<p2>sing_up</p2>
 				
 		<a title="log_in" href="login.html" 
@@ -91,45 +108,112 @@
 <tr>
 <td>Lowercase Noises</td>
 <td>Moonlit Sailor</td>
-	<td>The Evpatoria Report</td>
-	<td>Anoice</td>		
+<td>The Evpatoria Report</td>
+<td>Anoice</td>		
 </tr>
 <tr>
 <td>The Allstar Project</td>
 <td>Poets Of Light</td>
-				 <td>Blueneck</td>
-				 <td>Sinobola </td>
-				 
-			 </tr>
+<td>Blueneck</td>
+<td>Sinobola </td>			 
+</tr>
 </table> 
-			</p5> 
-	</div>
-			 								
-	
+</p5> 
+</div>										
 	<div id="Instrumental">
 		...
 	</div>
 
 </div>
-<script>
-				$(document).ready(function() {
-	$("#content div").hide(); // Скрываем содержание
-	$("#tabs li:first").attr("id","current"); // Активируем первую закладку
-	$("#content div:first").fadeIn(); // Выводим содержание
-    
-    $('#tabs a').click(function(e) {
-        e.preventDefault();        
-        $("#content div").hide(); //Скрыть все сожержание
-        $("#tabs li").attr("id",""); //Сброс ID
-        $(this).parent().attr("id","current"); // Активируем закладку
-        $('#' + $(this).attr('title')).fadeIn(); // Выводим содержание текущей закладки
-    });
-})();
- </script>
- 
-			</div>
+</div>	
 				
+				<div id ="content3">
+
+				
+<div id="slider">
+	<input type="radio" name="slider" id="slide1" checked="">
+	<input type="radio" name="slider" id="slide2">
+	<input type="radio" name="slider" id="slide3">
+	<input type="radio" name="slider" id="slide4">
+	<input type="radio" name="slider" id="slide5">
+
+	<div id="slides">
+		<div id="overflow">
+			<div class="inner">
+				<div class="page">
+					<img src="LoFibw.gif" />
+					<img src="ambientbw.gif" />
+					<img src="Instrumental.gif" />
+					<img src="Post-rock.gif" />
+				</div>
+				<div class="page">
+					<img src="picture1.gif" />
+						<img src="picture2.gif" />
+						<img src="picture3.gif" />
+					<img src="Instrumental.gif" />
+				</div>
+				<div class="page">
+					<img src="LoFibw.gif" />
+					<img src="ambientbw.gif" />
+					<img src="Post-rockbw.gif" />
+					<img src="Jazzbw.gif" />
+					
+				</div>
+				<div class="page">
+					<img src="Post-rock.gif" />
+					<img src="NeoClassical.gif" />
+					<img src="Instrumental.gif" />
+					<img src="LoFi.gif" />
+				</div>
+				<div class="page">
+					<img src="http://placehold.it/588x250" />
+					<img src="http://placehold.it/588x250" />
+					<img src="http://placehold.it/588x250" />
+					<img src="http://placehold.it/588x250" />
+				</div>
+				
+			</div> <!--inner-->
+		</div> <!--overflow-->
+	</div> <!--slides-->
+	
+	<div id="controls">
+		<label for="slide1"></label>
+		<label for="slide2"></label>
+		<label for="slide3"></label>
+		<label for="slide4"></label>
+		<label for="slide5"></label>
+	</div>
+	
+	<div id="active">
+		<label for="slide1"></label>
+		<label for="slide2"></label>
+		<label for="slide3"></label>
+		<label for="slide4"></label>
+		<label for="slide5"></label>
+	</div>
+</div>
+			</div>
 			
+			
+			<div id = "content4">
+			<table border="2">
+				<tr>
+				<th>
+					<p3>Album</p3></th>
+					<th> <p3>Playlist</p3>
+						
+				</th>
+					</tr>
+				<tr>
+				<th>
+				<img src="ambient.gif">
+				</th>
+					</tr>
+				</table>
+				
+			</div>
+			
+		</div>
 		
 	</body>
 </html>

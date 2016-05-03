@@ -5,11 +5,11 @@ html {
 }
 
 body { 
-    height: 5500px;
+    height: 5550px;
 	width: 1920px;
     margin: 0px auto;
 	z-index: -10;
-	background: url(back_ground2.gif) no-repeat ;
+	background: url(back_ground.gif) no-repeat  ;
 	background-position: center;
 	overflow-y: scroll;
 	
@@ -17,39 +17,65 @@ body {
 }
 #header
 {
-    margin-top: 10px; /* Отступы вокруг элемента */
-    padding: 40px; /* Поля вокруг текста */
-	width: auto;
-	height: 127px; /*427*/
+    margin-top: 60px; /* Отступы вокруг элемента */
+    padding: 0px; /* Поля вокруг текста */
+	width: 1800px;
+	height: 0px; /*427*/
+	padding-left: 40px;
+	
+
+	top:100px ;
 	
 	
+}
+
+p0{
+color: white;
+font-family: "Courier New";	
+font-size: 40pt;
+padding-left: 20px;
+}
+
+p0:hover
+{
+color: dodgerblue;
+}
+a
+{
+text-decoration:none;
 }
 p1
 {
-	font-size: 20pt;
+	font-size: 18pt;
 	font-family: "Courier New";
-	float: right
-	
-	
+	float: right;
+	padding-left: 40px;
+	padding-top: 130px;	
+}
+p1:hover
+{
+color: dodgerblue;
 }
 p2
 {
-	font-size: 20pt;
+	font-size: 18pt;
 	font-family: "Courier New";
-	float: right
+	float: right;
+	padding-left: 40px;
+	padding-top: 130px;
+}
+p2:hover
+{
+color: dodgerblue;	
 }
 
 
-a {
-	 text-decoration: none;
-	text-indent: 40px;
-}
 
 #content1 
 {
 	width: 1920px;
 	height: 600px;
-	background: url(whitestripprozrachnyj.png) no-repeat fixed top ;
+	background: url(whitestripprozrachnyj.png) no-repeat ;
 	text-align: center;
 	align-content: center;
 	transition:all 0.5s ease;
@@ -70,7 +96,8 @@ table {
 	caption-side: top;
 	width: auto; /* Ширина таблицы */
 	height: auto;
-    border-spacing: 10px; /* Расстояние между ячейками */
+    border-spacing: 20px; /* Расстояние между ячейками */
+
 	border: 0px;
 	margin: 50px auto;
 	margin-top: 50px;
@@ -90,6 +117,8 @@ table {
 }
 .hover:hover {
 	  opacity:1;
+	background: 
+	
  
 }
 .pp
@@ -102,28 +131,31 @@ table {
 {
 	z-index: 2;
 	position: absolute;
-	margin-top: 500px;
-	margin-left: 200px;	
+	margin-top: 700px;
+	margin-left: 150px;	
+	
 }
 
 p4
 {
 	font-size: 17pt;
 	font-family: "Courier New";
+	
 }
 
 
 #tabs{
   overflow: hidden;
   width: 100%;	
-  margin: 0;
+  margin-left: 100px;
   padding: 0;
   list-style: none;
+	
 }
 
 #tabs li{
   float: left;
- 
+
 }
 
 #tabs a{
@@ -147,6 +179,7 @@ p4
 
 #tabs a:focus{
   outline: 0;
+	
 }
 
 #tabs a::after{
@@ -154,9 +187,7 @@ p4
   position:absolute;
   z-index: 1;
   top: 0;
-  right: -.5em;
   bottom: 0;
-  width: 1em;
   background: white;
   background-image: linear-gradient(to bottom, darkgrey);
 
@@ -173,10 +204,12 @@ p4
 #content
 {
     background: white;
-    padding: 2em;
-    height: 820px;
+	margin-left: 100px;
+    height: 100px;
+	width: 1400px;
     position: relative;
     z-index: 2;
+	
  
 }
 p5
@@ -191,7 +224,9 @@ td
 	padding: 25px; /* Поля вокруг текста */
 	margin: 0;
 	border: 3px ; 
-	width: 1000px;
+	width: 310px;
+	
+
 }
 td:hover,
  td:hover::after
@@ -199,7 +234,148 @@ td:hover,
 	background-color: darkgrey;
 	color: darkblue;
 
-1}
+}
+
+#content3
+{
+height:270px;
+
+	width: 1920px;
+	z-index: 3;
+	margin-top: 1885px;
+
+		
+}
+
+#slider {
+width: 980px; 
+margin: 0 auto; 
+position: relative;
+}
+#slides {
+background: black;
+
+box-shadow:2px 2px 4px #333, inset 1px 1px 0 #ddd;
+  -webkit-box-shadow:2px 2px 4px #333, inset 1px 1px 0 #ddd;
+     -moz-box-shadow:2px 2px 4px #333, inset 1px 1px 0 #ddd;
+       -o-box-shadow:2px 2px 4px #333, inset 1px 1px 0 #ddd;
+      -ms-box-shadow:2px 2px 4px #333, inset 1px 1px 0 #ddd;
+border-radius: 5px;
+  -webkit-bolder-radius: 5px;
+     -moz-border-radius: 5px;
+}
+.inner {width: 500%;}
+.inner:after {
+
+	display: block;
+	height: 0;
+	clear:both;
+	}
+.page {float: left; width: 20%;}
+.page img {width:240px; height: 200px;}
+
+#overflow {
+	overflow: hidden; 
+	background-color: black;
+	
+}
+#slider input {display: none;}
+
+#controls {
+position: absolute;
+width:100%;
+top: 90px;
+left: 0;
+height: 50px;
+}
+
+#controls label {
+display: none;
+opacity: 0.3;
+cursor: pointer;
+}
+#controls label:hover {
+opacity: 0.8;
+}
+/* перелистывание фотографий */	
+#slide1:checked ~ #controls label:nth-child(2),
+#slide2:checked ~ #controls label:nth-child(3),
+#slide3:checked ~ #controls label:nth-child(4),
+#slide4:checked ~ #controls label:nth-child(5),
+#slide5:checked ~ #controls label:nth-child(1) {
+/* первые пять значений создадут стрелку справа*/
+width: 0;
+height: 0;
+border-top: 20px solid transparent;
+border-left: 20px solid blue;
+border-bottom: 20px solid transparent;
+float: right; /*в правый угол*/
+margin-right:-30px; /* за блок*/ 
+display: block;
+}
+#slide1:checked ~ #controls label:nth-child(5),
+#slide2:checked ~ #controls label:nth-child(1),
+#slide3:checked ~ #controls label:nth-child(2),
+#slide4:checked ~ #controls label:nth-child(3),
+#slide5:checked ~ #controls label:nth-child(4) {
+/*стрелка слева*/
+	width: 0;
+	height: 0;
+	border-top: 20px solid transparent;
+	border-bottom: 20px solid transparent;
+    border-right: 20px solid  blue;
+    float: left;	
+	display: block;
+    margin-left: -27px;
+	}
+
+#slide1:checked ~ #slides .inner { margin-left:0;} 
+#slide2:checked ~ #slides .inner { margin-left:-100%;} 
+#slide3:checked ~ #slides .inner { margin-left:-200%;} 
+#slide4:checked ~ #slides .inner { margin-left:-300%;} 
+#slide5:checked ~ #slides .inner { margin-left:-400%;} 
+
+/*точки для перелистывания*/
+#active {
+text-align: center;
+margin-top: 10px;
+}
+#active label {
+width: 15px;
+height:10px;
+background: dodgerblue;
+display:none;
+cursor:pointer;
+border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	}
+#active label:hover {
+background: #999;
+}
+#slide1:checked ~ #active label:nth-child(1),
+#slide2:checked ~ #active label:nth-child(2),
+#slide3:checked ~ #active label:nth-child(3),
+#slide4:checked ~ #active label:nth-child(4),
+#slide5:checked ~ #active label:nth-child(5) { background: #333;}
+
+#slides .inner {
+transition: all 0.8s ease-in-out;
+-webkit-transition: all 0.8s ease-in-out;
+-moz-transition: all 0.8s ease-in-out;
+-ms-transition: all 0.8s ease-in-out;
+-o-transition: all 0.8s ease-in-out;
+}
+
+#content4
+{
+	background-image: url(white_strip3.png);
+	height: 1250px;
+	width: auto;
+	position: inherit;
+		
+}
+
 
 
 
