@@ -175,7 +175,7 @@
 	
 
 		
-		<td id='loadText' style="cursor:pointer"> God is an astronaut </td> 
+		<td id='loadText' style="cursor:pointer"><a href="#scrolls"> God is an astronaut </a></td> 
 	
 		
 			</tr>
@@ -273,8 +273,9 @@
 			</div>
 					
 	<div id = "content4">
-		
+	
 <table border="2">
+	 <a id ="scrolls"></a>
 				<tr>
 				<th><p3>Album</p3></th>
 					<th> <p3>Playlist</p3></th>
@@ -283,7 +284,7 @@
 			
 			<tr> <td>+++</td>
 	<td><div id="loader"></div> </td></tr>
-		 
+		
 		 </div>
 					
 			
