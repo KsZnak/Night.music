@@ -3,34 +3,17 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>nigt.music_EF</title>
-	<script src="jquery-2.2.3.js"></script>
+	<script 
+			src="jquery-2.2.3.js"
+			
+			></script>
 	
 	
-	<script>
-		function funcBefore (){
-			$("#information").text("wait...");
-		}
-			function funcSuccess (data){
-			$("#information").text(data);
-		}
-	$(document).ready(function() {
-		$("#load").bind("click", function(){
-			$.ajax({
-				url: "content.php",
-				type: "POST",
-				data: ({name: "admin", number:5}),
-				dataType: "html",
-				beforeSend: funcBefore,
-				success: funcSuccess
-			});
-		});
-	});
-	</script>
 	
 	
-	<script >
+<script >
 		
-				$(document).ready(function() {
+	 $(document).ready(function() {
 	$("#content div").hide(); // Скрываем содержание
 	$("#tabs li:first").attr("id","current"); // Активируем первую закладку
 	$("#content div:first").fadeIn(); // Выводим содержание
@@ -43,7 +26,9 @@
         $('#' + $(this).attr('title')).fadeIn(); // Выводим содержание текущей закладки
     });
 });
+
  </script>
+	
 	
 	
 			
@@ -187,9 +172,12 @@
 	<div id="Post-rock">
 	 <p5><table border="1">
 	<tr>
+	
+
 		
-		<td id="load" style="cursor:pointer"> God is an astronaut </td>
-		<div id="information"></div>
+		<td id='loadText' style="cursor:pointer"> God is an astronaut </td> 
+	
+		
 			</tr>
 
 		 </table>
@@ -197,8 +185,17 @@
 
 	
 		 </div>
-		 
 	
+	
+		<script>
+		$(document).ready(function(){
+			$('#loadText').click(function () {
+		$('#loader').load('./content.html', function(){
+			
+						  });
+			 });
+		 });
+	</script>
 			
 
 	
@@ -277,39 +274,15 @@
 					
 	<div id = "content4">
 		
-<table class="table-bordered">
- <thead>
-  <tr>
-	  
-	 <th>Album</th><th>Track list</th> 
-		  
-  </tr>
- </thead>
- <tbody>
-  <tr>
-	  
-	  
-	  <?php
-	  $albumpicture = "<a href='ambient.html'><img src = 'ambient.gif'>";
-	  
-	  
-   echo "<td>$albumpicture</td><td>"; 
-	 
- 	 $files = glob("$dir/*.mp3"); // Получаем список mp3-файлов	
-    for ($i = 0; $i < count($files); $i++) {
-    echo "<p>".basename($files[$i])."</p>"; // Выводим название файла
-    echo "<audio controls='controls'>"; // Выводим тег аудио с панелью управления
-    echo "<source type='audio/mpeg' src='".$files[$i]."' />"; // Подключаем путь к аудио-файлу
-    echo "</audio>"; // Закрываем тег
-    echo "<br /><br />"; // Переходим на 2 перехода на новую строку
-  }
-  echo "</td>"
-   ?>
-  </tr>
-
- </tbody>
-</table>
-		 
+<table border="2">
+				<tr>
+				<th><p3>Album</p3></th>
+					<th> <p3>Playlist</p3></th>
+						
+	</tr>
+			
+			<tr> <td>+++</td>
+	<td><div id="loader"></div> </td></tr>
 		 
 		 </div>
 					
