@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<meta charset ="UTF-8">
+	<title>HTML5 Audio Player</title>
+	<link rel = "stylesheet" href="style.css"/>	
+	<style>
+		#playlist{
+			list-style: none;
+		}
+		#playlist li a {
+			color:black;
+			text-decoration: none;
+		}
+		#playlist .current-song a{ 
+			color:blue;
+		}
+	</style>
+	</head>
+	<body>
+	<audio src=" " controls id="audioPlayer">
+		</audio>
+		<ul id="playlist">
+		<li class="current-song">
+			<p><a href="Ripple.mp3">Riple</a></p> </li>
+			<li><p><a href="Colder%20Than%20Thermite.mp3">Colder Than Thermite</a></p></li>
+			
+		</ul>
+		<script src="jquery-2.2.3.js" ></script>
+		   <script src="audioPlayer.js"></script>
+		<script>
+		audioPlayer();
+			  
+		</script>
+		
+	</body>
+
+
+
+
+</html>

@@ -21,7 +21,7 @@
     $('#tabs a').click(function(e) {
         e.preventDefault();        
         $("#content div").hide(); //Скрыть все сожержание
-        $("#tabs li").attr("id",""); //Сброс ID
+        $("#tabs li").attr("id", ""); //Сброс ID
         $(this).parent().attr("id","current"); // Активируем закладку
         $('#' + $(this).attr('title')).fadeIn(); // Выводим содержание текущей закладки
     });
@@ -190,7 +190,7 @@
 		<script>
 		$(document).ready(function(){
 			$('#loadText').click(function () {
-		$('#loader').load('./content.html', function(){
+		$('#loader').load('./playlist.html', function(){
 			
 						  });
 			 });
